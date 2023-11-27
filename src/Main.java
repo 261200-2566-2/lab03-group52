@@ -1,17 +1,48 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        RPGcharacter player = new RPGcharacter("kyungsoo", "feeeeeeMale");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        // Display initial stats
+        System.out.println("Initial Stats:");
+        player.showStat(player);
+
+        // Level up the character
+        player.characterlevelup();
+        System.out.println("\nAfter Level Up:");
+        player.showStat(player);
+
+        // Equip a sword
+        player.equip("sword");
+        System.out.println("\nAfter Equipping Sword:");
+        player.showStat(player);
+
+        // Level up the sword
+        player.swordLevelup();
+        System.out.println("\nAfter Sword Level Up:");
+        player.showStat(player);
+
+        // Unequip the sword
+        player.unequip("sword");
+        System.out.println("\nAfter Unequipping Sword:");
+        player.showStat(player);
+
+        // Equip a shield
+        player.equip("shield");
+        System.out.println("\nAfter Equipping Shield:");
+        player.showStat(player);
+
+        // Level up the shield
+        player.shieldLevelup();
+        System.out.println("\nAfter Shield Level Up:");
+        player.showStat(player);
+
+        player.equip("affs");
+        player.equip("shield");
+        player.equip("sword");
+        player.showStat(player);
+
+        RPGcharacter.showStatGM(player);
     }
 }
