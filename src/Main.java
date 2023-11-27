@@ -38,7 +38,7 @@ public class Main {
         System.out.println("\nAfter Shield Level Up:");
         player.showStat(player);
 
-        player.equip("affsf");
+        player.equip("affs");
         player.equip("shield");
         player.equip("sword");
         player.showStat(player);
