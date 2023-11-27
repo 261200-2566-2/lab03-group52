@@ -117,7 +117,7 @@ public class RPGcharacter {
             System.out.println("You don't have this weapon anymore.");
         }
     }
-    // ฟังก์ชันนี้จะรับinputเป็นอาวุธ ใช้ในการถอดอาวุธออกจากตัวละคร โดยมีการตรวจสอบว่าตัวละครมี "sword" หรือ "shield" อยู่หรือไม่ และถ้ามีจะทำการถอดออก
+    // ฟังก์ชันนี้จะรับinputเป็นอาวุธใช้ในการถอดอาวุธออกจากตัวละคร โดยมีการตรวจสอบว่าตัวละครมี "sword" หรือ "shield" อยู่หรือไม่ และถ้ามีจะทำการถอดออก
     void showStat(RPGcharacter character) {
         System.out.println("Name: " + character.name);
         System.out.println("Gender: " + character.gender);
